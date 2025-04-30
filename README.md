@@ -1,3 +1,31 @@
+# Conda Environment and Fluidsynth Installation
+
+First, install fluidsynth via brew
+
+```bash
+brew install fluidsynth
+```
+Then, create a conda environment using the provided YAML file. This will ensure that all the necessary dependencies are installed.
+
+```bash
+conda env create -f environment.yml
+```
+
+
+# Activate the conda environment
+
+```bash
+conda activate TripleStream
+```
+
+
+
+
+
+
+
+--------
+
 
 # List of Contents
 ### Guides for using the repository can be found here

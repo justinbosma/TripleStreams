@@ -1,0 +1,17 @@
+# environment.yml
+name: TripleStreams
+channels:
+  - defaults        # core conda packages
+dependencies:
+  - python=3.9
+  - notebook        # Jupyter Notebook
+  - pip             # so that pip is available inside the env
+  - pip:
+      - torch       # installed with pip inside the environment
+      - numpy
+      - note-seq
+      - wandb
+      - pyFluidSynth
+      - bokeh
+      - holoviews
+      - colorcet
