@@ -206,7 +206,7 @@ def move_through_collection(dataset_dir, output_dir, expert_level, rating, instr
     # Prepare arguments for multiprocessing
     args_list = [
         (user, dataset_dir, output_dir, expert_level, rating, instrument_lists)
-        for user in collection[:10]
+        for user in collection
     ]
 
     # Use multiprocessing to handle users in parallel
@@ -220,7 +220,7 @@ def main(params):
     list_instruments = ['flattened', 'snare', 'kick', 'left', 'right', 'both', 'toms', 'hihats']
     hvo_dir = 'dataset_and_API/data/'
     output_dir = 'bongosero/hvo_sequences_single_voices'
-    move_through_collection(hvo_dir, output_dir, 2, 2, list_instruments, n_workers=8)
+    move_through_collection(hvo_dir, output_dir, 4, 3, list_instruments, n_workers=8)
 
 if __name__ == "__main__":
     main(sys.argv[1:])
