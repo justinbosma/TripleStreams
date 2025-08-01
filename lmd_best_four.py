@@ -19,33 +19,45 @@ def filter_best_four(track_dict):
     new_dict = {}
     sorting_list = []
     splits = track_dict['split_n_bar_phrases']
+    phrases = []
+    
     for i, hvo in enumerate(splits):
         if sum(sum(hvo.hits)) > 0:
-            sum_with_index = [i, sum(sum(hvo.hits))]
-            sorting_list.append(sum_with_index)
-        #else:
-            #print("there were no hits")
+            sorting_list.append([i, sum(sum(hvo.hits))])
+    
     sorted_hvo = sorted(sorting_list, key=lambda x: x[1])
+    
+    if len(sorted_hvo) > 8:
+        n = len(sorted_hvo)
+        #indices = [int(math.floor(n * i / 8)) for i in range(8)]
+        indices = [int(math.floor(n / 2 + (n / 2) * i / 8)) for i in range(8)]
+        indices = [min(idx, n - 1) for idx in indices]
 
-    left_fourth = int(math.floor(len(sorted_hvo)/4))
-    right_fourth = int(math.ceil(len(sorted_hvo)*(3/4)))
-    if len(sorted_hvo) > 0:
-        new_dict['split_n_bar_phrases'] = [splits[sorted_hvo[0][0]], splits[sorted_hvo[left_fourth][0]], splits[sorted_hvo[right_fourth][0]], splits[sorted_hvo[len(sorted_hvo) - 1][0]]]
+        for idx in indices:
+            phrases.append(splits[sorted_hvo[idx][0]])
+
+        new_dict['split_n_bar_phrases'] = phrases
         new_dict['filenames'] = track_dict['filenames']
         new_dict['hvo_sequences'] = track_dict['hvo_sequences']
         new_dict['compiled_single_hvos'] = track_dict['compiled_single_hvos']
-
+    else:
+        print(f"Not enough hvo sequences to filter. Found: {len(sorted_hvo)}")
+    
     return new_dict
+
 
 # Goes through each track in the dictionary and runs the filter_best_four function on each
 # Input: Dictionary (first level) with track name values
 # output: New Dictionary with new dictionaries for each track with updated best hvo values
 def get_hvo_sequence_from_track_dictionary(dict):
     new_dict = {}
+    best_four_dict = {}
     for track in dict['AllAvailableStreams']:
         print(track)
         track_dict = dict['AllAvailableStreams'][track]
-        new_dict[track] = filter_best_four(track_dict)
+        best_four_dict = filter_best_four(track_dict)
+        if 'split_n_bar_phrases' in best_four_dict:
+            new_dict[track] = best_four_dict
     return new_dict
     
 
@@ -57,8 +69,6 @@ def run_all(pkl_path):
         dataset = load_dataset(pkl_path)
         filtered_dict = get_hvo_sequence_from_track_dictionary(dataset)
 
-        # Build output path with `_filtered` suffix
-        os.mkdir('data/triple_streams/split_2bars/lmd_top_four')
         base_name = os.path.basename(pkl_path).replace('.pkl.bz2', '')
         output_name = f"{base_name}_filtered.pkl.bz2"
         output_path = os.path.join('data/triple_streams/split_2bars/lmd_top_four', output_name)
