@@ -1,0 +1,112 @@
+Lack MIDI
+
+Dictionary Structure:
+AllAvailableStreams:
+    |-------> 203_p1_simple (4 files) 
+    |          |-------> 203_p1_simple 
+    |                     |--> 'filenames:' 
+    |                           |-------> 203_p1_simple_both.hvo 
+    |                           |-------> 203_p1_simple_flattened.hvo 
+    |                           |-------> 203_p1_simple_left.hvo 
+    |                           |-------> 203_p1_simple_right.hvo 
+    |                     |--> 'hvo_sequences:'
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                     |--> 'compiled_single_hvos:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x31516d070>]
+    |                     |--> 'split_n_bar_phrases:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x31550bbe0>]
+    |-------> ...
+
+    |-------> 345_p1_simple (4 files) 
+    |          |-------> 345_p1_simple 
+    |                     |--> 'filenames:' 
+    |                           |-------> 345_p1_simple_flattened.hvo 
+    |                           |-------> 345_p1_simple_both.hvo 
+    |                           |-------> 345_p1_simple_left.hvo 
+    |                           |-------> 345_p1_simple_right.hvo 
+    |                     |--> 'hvo_sequences:'
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                     |--> 'compiled_single_hvos:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x316ef5a00>]
+    |                     |--> 'split_n_bar_phrases:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x31590cca0>]
+    |-------> ...
+
+    |-------> 281_p1_complex (4 files) 
+    |          |-------> 281_p1_complex 
+    |                     |--> 'filenames:' 
+    |                           |-------> 281_p1_complex_flattened.hvo 
+    |                           |-------> 281_p1_complex_left.hvo 
+    |                           |-------> 281_p1_complex_right.hvo 
+    |                           |-------> 281_p1_complex_both.hvo 
+    |                     |--> 'hvo_sequences:'
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                     |--> 'compiled_single_hvos:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x3158ae8e0>]
+    |                     |--> 'split_n_bar_phrases:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x31590c0d0>]
+    |-------> ...
+
+    |-------> 173_p1_simple (4 files) 
+    |          |-------> 173_p1_simple 
+    |                     |--> 'filenames:' 
+    |                           |-------> 173_p1_simple_flattened.hvo 
+    |                           |-------> 173_p1_simple_right.hvo 
+    |                           |-------> 173_p1_simple_left.hvo 
+    |                           |-------> 173_p1_simple_both.hvo 
+    |                     |--> 'hvo_sequences:'
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                     |--> 'compiled_single_hvos:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x3158ae4c0>]
+    |                     |--> 'split_n_bar_phrases:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x315defcd0>]
+    |-------> ...
+
+    |-------> 109_p1_simple (4 files) 
+    |          |-------> 109_p1_simple 
+    |                     |--> 'filenames:' 
+    |                           |-------> 109_p1_simple_left.hvo 
+    |                           |-------> 109_p1_simple_flattened.hvo 
+    |                           |-------> 109_p1_simple_both.hvo 
+    |                           |-------> 109_p1_simple_right.hvo 
+    |                     |--> 'hvo_sequences:'
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                     |--> 'compiled_single_hvos:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x3158ae1c0>]
+    |                     |--> 'split_n_bar_phrases:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x31590ceb0>]
+    |-------> ...
+
+    |-------> 279_p1_simple (4 files) 
+    |          |-------> 279_p1_simple 
+    |                     |--> 'filenames:' 
+    |                           |-------> 279_p1_simple_flattened.hvo 
+    |                           |-------> 279_p1_simple_right.hvo 
+    |                           |-------> 279_p1_simple_both.hvo 
+    |                           |-------> 279_p1_simple_left.hvo 
+    |                     |--> 'hvo_sequences:'
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                     |--> 'compiled_single_hvos:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x3158aec70>]
+    |                     |--> 'split_n_bar_phrases:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x31590cee0>]
+    |-------> ...
+

@@ -1,0 +1,112 @@
+Lack MIDI
+
+Dictionary Structure:
+AllAvailableStreams:
+    |-------> 8337_attempt3 (4 files) 
+    |          |-------> 8337_attempt3 
+    |                     |--> 'filenames:' 
+    |                           |-------> flattened.hvo 
+    |                           |-------> left.hvo 
+    |                           |-------> both.hvo 
+    |                           |-------> right.hvo 
+    |                     |--> 'hvo_sequences:'
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                     |--> 'compiled_single_hvos:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x17533aeb0>]
+    |                     |--> 'split_n_bar_phrases:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x3141317c0>]
+    |-------> ...
+
+    |-------> 9413_attempt1 (4 files) 
+    |          |-------> 9413_attempt1 
+    |                     |--> 'filenames:' 
+    |                           |-------> flattened.hvo 
+    |                           |-------> left.hvo 
+    |                           |-------> both.hvo 
+    |                           |-------> right.hvo 
+    |                     |--> 'hvo_sequences:'
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                     |--> 'compiled_single_hvos:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x17533a310>]
+    |                     |--> 'split_n_bar_phrases:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x3142c1f10>]
+    |-------> ...
+
+    |-------> 8385_attempt0 (4 files) 
+    |          |-------> 8385_attempt0 
+    |                     |--> 'filenames:' 
+    |                           |-------> flattened.hvo 
+    |                           |-------> left.hvo 
+    |                           |-------> both.hvo 
+    |                           |-------> right.hvo 
+    |                     |--> 'hvo_sequences:'
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                     |--> 'compiled_single_hvos:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x17533a1c0>]
+    |                     |--> 'split_n_bar_phrases:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x3150b9340>]
+    |-------> ...
+
+    |-------> 2192_attempt0 (4 files) 
+    |          |-------> 2192_attempt0 
+    |                     |--> 'filenames:' 
+    |                           |-------> flattened.hvo 
+    |                           |-------> left.hvo 
+    |                           |-------> both.hvo 
+    |                           |-------> right.hvo 
+    |                     |--> 'hvo_sequences:'
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                     |--> 'compiled_single_hvos:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x17531d880>]
+    |                     |--> 'split_n_bar_phrases:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x316830ee0>]
+    |-------> ...
+
+    |-------> 4654_attempt0 (4 files) 
+    |          |-------> 4654_attempt0 
+    |                     |--> 'filenames:' 
+    |                           |-------> flattened.hvo 
+    |                           |-------> left.hvo 
+    |                           |-------> both.hvo 
+    |                           |-------> right.hvo 
+    |                     |--> 'hvo_sequences:'
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                     |--> 'compiled_single_hvos:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x17531db20>]
+    |                     |--> 'split_n_bar_phrases:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x31413b6a0>]
+    |-------> ...
+
+    |-------> 8072_attempt1 (4 files) 
+    |          |-------> 8072_attempt1 
+    |                     |--> 'filenames:' 
+    |                           |-------> flattened.hvo 
+    |                           |-------> left.hvo 
+    |                           |-------> both.hvo 
+    |                           |-------> right.hvo 
+    |                     |--> 'hvo_sequences:'
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                           |-------> 32 steps, i.e. 2 bars.
+    |                     |--> 'compiled_single_hvos:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x17531ddc0>]
+    |                     |--> 'split_n_bar_phrases:'
+    |                               |-------> [<hvo_sequence.hvo_seq.HVO_Sequence object at 0x3140352e0>]
+    |-------> ...
+
